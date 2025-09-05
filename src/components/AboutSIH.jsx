@@ -1,64 +1,56 @@
-import { motion } from "framer-motion";
-
 const AboutSIH = () => {
   return (
     <section
       id="about"
       className="py-20 px-6 max-w-5xl mx-auto text-center text-gray-200"
     >
-      <motion.h2
-        className="text-3xl font-bold mb-6 text-orange-400"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+      <h2 className="text-3xl font-bold mb-6 text-orange-400">
         About Smart India Hackathon
-      </motion.h2>
+      </h2>
+      <p className="text-lg mb-6 leading-relaxed">
+        Smart India Hackathon (SIH) is a premier nationwide initiative designed to
+        engage students in solving some of the most pressing challenges faced in
+        everyday life. Launched to foster a culture of innovation and practical
+        problem-solving, SIH provides a dynamic platform for students to develop
+        and showcase their creative solutions to real-world problems.
+      </p>
+      <p className="text-lg mb-6 leading-relaxed">
+        By encouraging participants to think critically and innovatively, the
+        hackathon aims to bridge the gap between academic knowledge and practical
+        application. Since its inception, SIH has garnered significant success in
+        promoting out-of-the-box thinking among young minds, particularly
+        engineering students across India.
+      </p>
+      <p className="text-lg mb-6 leading-relaxed">
+        Each edition has built on the previous one, refining its approach and
+        expanding its impact. The hackathon not only offers students an opportunity
+        to showcase their skills but also encourages collaboration with industry
+        experts, government agencies, and other stakeholders.
+      </p>
 
-      <motion.p
-        className="text-lg mb-6"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        The <span className="font-semibold text-white">Smart India Hackathon (SIH)</span> 
-        is a nationwide initiative that empowers students to tackle real-life 
-        challenges faced by ministries, industries, and society. It is one of 
-        India’s biggest open innovation models and a gateway to showcase 
-        creativity, problem-solving, and technical skills.
-      </motion.p>
-
-      <motion.a
-        href="https://www.sih.gov.in/" 
+      <a
+        href="https://www.sih.gov.in/"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold transition duration-300"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
+        className="inline-block mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold transition-transform transform hover:scale-105"
       >
-        Learn More on SIH Website
-      </motion.a>
+        Learn More on Official SIH Website
+      </a>
 
-      <motion.div
-        className="mt-12 bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 shadow-lg"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <h3 className="text-2xl font-semibold text-green-400 mb-4">
-          Internal Hackathon at BTKIT
+      {/* Internal Hackathon Section */}
+      <div className="mt-16">
+        <h3 className="text-2xl font-semibold mb-4 text-green-400">
+          BTKIT Internal Hackathon
         </h3>
-        <p className="text-gray-300 text-md">
-          To prepare for SIH 2025, <span className="font-semibold">BTKIT Dwarahat</span> 
-          is organizing an <span className="text-orange-400">Internal Hackathon</span> on 
-          <span className="font-semibold text-white"> September 16, 2025</span>. 
-          This event will help select the best teams to represent our institute 
-          at the national level. It’s a chance to showcase your talent, build 
-          impactful solutions, and take one step closer to contributing to 
-          India’s innovation journey.
+        <p className="text-lg leading-relaxed">
+          To select the best teams for the{" "}
+          <span className="font-bold text-orange-400">National SIH 2025</span>, 
+          Bipin Tripathi Kumaon Institute of Technology, Dwarahat, organizes an 
+          internal hackathon. This serves as the gateway for students to represent 
+          BTKIT at the national level. The event is not just a competition but a 
+          celebration of innovation, teamwork, and problem-solving spirit.
         </p>
-      </motion.div>
+      </div>
     </section>
   );
 };
