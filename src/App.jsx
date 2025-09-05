@@ -20,7 +20,7 @@ function App() {
       <RegistrationSection/>
       
       <FAQSection/>
-      {/* <FooterSection/> */}
+      <FooterSection/>
     </div>
   );
 }
