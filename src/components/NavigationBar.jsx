@@ -7,7 +7,7 @@ const NavigationBar = () => {
           <a href="#home" className="text-gray-200 hover:text-orange-400">Home</a>
           <a href="#about" className="text-gray-200 hover:text-orange-400">About SIH</a>
           <a href="#timeline" className="text-gray-200 hover:text-orange-400">Timeline</a>
-          <a href="#prizes" className="text-gray-200 hover:text-orange-400">Prizes</a>
+          {/* <a href="#prizes" className="text-gray-200 hover:text-orange-400">Prizes</a> */}
           <a href="#register" className="text-gray-200 hover:text-orange-400">Register</a>
         </div>
       </div>
