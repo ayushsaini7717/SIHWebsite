@@ -3,7 +3,7 @@ import { useState } from "react";
 const faqs = [
   { q: "How many members per team?", a: "6 members allowed(atleast 1 female)." },
   { q: "Who can participate?", a: "Only BTKIT students." },
-  { q: "What is the judging criteria?", a: "Innovation, Impact, and Execution." },
+  { q: "What is the judging criteria?", a: "Innovation, Feasibility, Technical Approach and Societal Impact." },
 ];
 
 const FAQSection = () => {

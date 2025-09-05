@@ -16,9 +16,7 @@ function App() {
       <AboutSIH/>
       <TimelineSection/>
       <ProblemCategories/>
-      {/* <PrizesSection/> */}
       <RegistrationSection/>
-      
       <FAQSection/>
       <FooterSection/>
     </div>
