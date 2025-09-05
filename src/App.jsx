@@ -16,7 +16,7 @@ function App() {
       <AboutSIH/>
       <TimelineSection/>
       <ProblemCategories/>
-      <PrizesSection/>
+      {/* <PrizesSection/> */}
       <RegistrationSection/>
       
       <FAQSection/>
