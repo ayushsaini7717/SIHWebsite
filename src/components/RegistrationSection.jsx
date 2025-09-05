@@ -9,7 +9,7 @@ const RegistrationSection = () => {
           href="https://forms.gle/your-google-form-link"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold animate-bounce"
+          className="inline-block px-6 py-3 mt-7 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold animate-bounce"
         >
           Go to Registration Form
         </a>

@@ -29,15 +29,37 @@ const TimelineSection = () => {
     { date: "Dec 2025", title: "Grand Finale (National SIH)" },
   ];
 
+  const imgRef = useRef(null);
+  const isImgVisible = useIntersectionObserver(imgRef, { threshold: 0.2 });
+
   return (
-    <section id="timeline" className="py-20 px-6 max-w-4xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-10 text-green-400">
+    <section
+      id="timeline"
+      className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
+    >
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-10 text-green-400">
         Timeline
       </h2>
-      <div className="space-y-6">
+
+      <div className="space-y-6 sm:space-y-8">
         {events.map((event, idx) => (
           <TimelineEvent key={idx} event={event} delay={idx * 0.2} />
         ))}
+
+        {/* Animate Image same as events */}
+        <motion.div
+          ref={imgRef}
+          initial={{ opacity: 0, y: 50 }}
+          animate={isImgVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: events.length * 0.2 }}
+          className="flex justify-center items-center"
+        >
+          <img
+            src="/flow.png"
+            alt="logo"
+            className="w-full max-w-xs sm:max-w-md lg:max-w-3xl h-auto"
+          />
+        </motion.div>
       </div>
     </section>
   );
