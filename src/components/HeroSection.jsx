@@ -51,7 +51,7 @@ const HeroSection = () => {
       {/* CTA Button */}
       <div>
         <a
-          href="#register"
+          href="https://forms.gle/PncEov3mr4jTDieR9"
                   className="mt-4 px-8 py-3 bg-orange-500 hover:bg-orange-600 rounded-xl text-white font-semibold shadow-lg transition-colors"
         >
           Register Now

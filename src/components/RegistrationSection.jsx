@@ -1,9 +1,6 @@
 const RegistrationSection = () => {
   return (
-    <section
-      id="register"
-      className="py-20 px-6 max-w-4xl mx-auto text-center"
-    >
+    <section id="register" className="py-20 px-6 max-w-4xl mx-auto text-center">
       <h2 className="text-3xl font-bold mb-6 text-green-400">
         Register Your Team
       </h2>
@@ -13,7 +10,10 @@ const RegistrationSection = () => {
           BTKIT Internal Hackathon 2025
         </span>
         . Winning teams will qualify to represent our institute in the{" "}
-        <span className="font-semibold">National Smart India Hackathon (SIH)</span>.
+        <span className="font-semibold">
+          National Smart India Hackathon (SIH)
+        </span>
+        .
       </p>
 
       <div className="bg-white/10 backdrop-blur-md rounded-xl border border-white/20 p-6 text-left mb-8">
@@ -22,7 +22,8 @@ const RegistrationSection = () => {
         </h3>
         <ul className="list-disc list-inside space-y-2 text-gray-200">
           <li>
-            Each team must have <span className="font-semibold">6 members</span>.
+            Each team must have <span className="font-semibold">6 members</span>
+            .
           </li>
           <li>
             At least <span className="font-semibold">1 female member</span> is
@@ -47,9 +48,9 @@ const RegistrationSection = () => {
         href="https://forms.gle/PncEov3mr4jTDieR9"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block px-8 py-3 mt-4 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold shadow-lg transition"
+        className="inline-block px-6 py-3 mt-7 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold animate-bounce"
       >
-        Go to Registration Form
+        Register Now
       </a>
     </section>
   );
