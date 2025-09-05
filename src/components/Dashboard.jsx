@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Calendar, Bell, Archive, ExternalLink, ChevronDown, ChevronUp, Filter, Pin, Clock, Users, Info, Trophy, FileText } from 'lucide-react';
 import DownloadButtons from './Download_buttons';
+import { HashLink } from 'react-router-hash-link';
+
 // Mock notices data
 const noticesData = [
   {
@@ -400,29 +402,22 @@ const QuickLinks = () => {
       title: 'Register Now',
       description: 'Join the competition',
       icon: <Users className="w-6 h-6" />,
-      link: '#register',
+      link: 'https://forms.gle/PncEov3mr4jTDieR9',
       color: 'from-orange-500 to-red-500'
     },
     {
       title: 'Timeline',
       description: 'Event schedule',
       icon: <Calendar className="w-6 h-6" />,
-      link: '#timeline',
+      link: '/#timeline',
       color: 'from-blue-500 to-cyan-500'
     },
     {
       title: 'Problem Statements',
       description: 'Download challenges',
       icon: <FileText className="w-6 h-6" />,
-      link: '#problems',
+      link: 'https://www.sih.gov.in/sih2025PS',
       color: 'from-green-500 to-emerald-500'
-    },
-    {
-      title: 'Contact Us',
-      description: 'Get help & support',
-      icon: <Bell className="w-6 h-6" />,
-      link: '#contact',
-      color: 'from-purple-500 to-pink-500'
     }
   ];
 
@@ -435,7 +430,8 @@ const QuickLinks = () => {
       
       <div className="space-y-4">
         {quickLinks.map((link, index) => (
-          <a
+          <HashLink
+            smooth to={link.link}
             key={index}
             href={link.link}
             className="block group"
@@ -452,7 +448,7 @@ const QuickLinks = () => {
               </div>
               <p className="text-white/80 text-sm">{link.description}</p>
             </div>
-          </a>
+          </HashLink>
         ))}
       </div>
 
