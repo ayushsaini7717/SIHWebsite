@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Calendar, Bell, Archive, ExternalLink, ChevronDown, ChevronUp, Filter, Pin, Clock, Users, Info, Trophy, FileText } from 'lucide-react';
-
+import DownloadButtons from './Download_buttons';
 // Mock notices data
 const noticesData = [
   {
@@ -162,6 +162,8 @@ const NoticesPage = () => {
             Stay informed with the latest circulars, deadlines, and announcements for BTKIT Dwarahat's internal competition
           </p>
         </div>
+
+        <DownloadButtons/>
 
         {/* Search and Filter Bar */}
         <div className="mb-12">
