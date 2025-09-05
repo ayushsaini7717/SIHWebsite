@@ -7,76 +7,95 @@ import { HashLink } from 'react-router-hash-link';
 const noticesData = [
   {
     id: 1,
-    title: "Hackathon Registration Deadline Extended",
-    date: "2025-09-10",
+    title: "Hackathon Registration",
+    date: "2025-09-5",
     type: "Registration",
     isPinned: true,
     isNew: true,
-    description: "The last date for registration has been extended to September 15, 2025. Teams must finalize members before submitting.",
-    fullContent: "Important update for all participants: Due to multiple requests from students, the registration deadline has been extended by 5 days. Teams can now register until September 15, 2025, 11:59 PM. Please ensure all team members' details are correctly filled in the registration form. Late submissions will not be accepted under any circumstances.",
-    link: "https://forms.gle/xyz123",
+    description: "Hackathon registration is now open. Teams must finalize members before submitting.",
+    fullContent: "We are excited to announce that hackathon registration is officially open! Teams are required to complete the registration form by the deadline. Please ensure that all team members' details are correctly filled in before submission. Late registrations will not be accepted.",
+    link: "https://forms.gle/PncEov3mr4jTDieR9",
     linkText: "Register Now"
   },
   {
     id: 2,
     title: "Problem Statements Released",
-    date: "2025-09-08",
+    date: "2025-08-25",
     type: "General Info",
-    isPinned: true,
-    isNew: true,
-    description: "All 25 shortlisted problem statements are now available for download. Teams can start brainstorming solutions.",
-    fullContent: "The complete list of 25 problem statements covering various domains like Healthcare, Education, Agriculture, Smart Cities, and Fintech has been released. Each problem statement includes detailed requirements, expected deliverables, and evaluation criteria. Teams are encouraged to study all problems before making their final selection on the day of the hackathon.",
-    link: "/problem-statements.pdf",
-    linkText: "Download PDF"
+    isPinned: false,
+    isNew: false,
+    description: "All problem statements are now available. Teams can start brainstorming and select one problem to work on.",
+    fullContent: "The complete list of problem statements covering various domains like Healthcare, Education, Agriculture, Transportation & Logistics, and Renewable / Sustainable Energy has been released. Each problem statement includes detailed requirements, expected deliverables, and evaluation criteria. Teams are encouraged to carefully study all problems and choose one statement, as per the SIH guidelines, that they will solve during the hackathon. Final selection must be confirmed during the registration process.",
+    link: "https://www.sih.gov.in/sih2025PS",
+    linkText: "View"
   },
-  {
+   {
     id: 3,
-    title: "Pre-Hackathon Workshop Schedule",
+    title: "Eligibility Criteria",
     date: "2025-09-05",
     type: "General Info",
     isPinned: false,
     isNew: false,
-    description: "Technical workshops on React, Python, and UI/UX design will be conducted from September 7-9, 2025.",
-    fullContent: "To help participants prepare better, we're organizing pre-hackathon workshops: Day 1 (Sept 7): React.js & Frontend Development, Day 2 (Sept 8): Python & Backend APIs, Day 3 (Sept 9): UI/UX Design & Figma. All workshops will be held in the Computer Lab from 2:00 PM to 5:00 PM. Attendance is optional but highly recommended.",
-    link: "/workshop-schedule.pdf",
-    linkText: "View Schedule"
+    description: "Guidelines on who can participate in the hackathon.",
+    fullContent: "To participate in the hackathon, each team must strictly follow the eligibility rules: \n\n1. Each team must have exactly 6 members.\n2. At least 1 female member is mandatory.\n3. All members must be current BTKIT students.\n4. Interdisciplinary teams (students from different branches) are encouraged.\n5. Each student can participate in only one team.",
+    // link: "/",
+    // linkText: "Download"
   },
+
   {
     id: 4,
-    title: "Venue Confirmation - Main Auditorium",
-    date: "2025-09-03",
+    title: "Venue Confirmation",
+    date: "2025-09-05",
     type: "General Info",
     isPinned: false,
     isNew: false,
-    description: "The hackathon will be held at BTKIT Main Auditorium with additional breakout rooms for team collaboration.",
-    fullContent: "Final venue details: Main presentations and opening ceremony will be in the Main Auditorium. Teams will have access to Computer Lab 1, Lab 2, and Conference Room A for development work. Each space has high-speed internet, power outlets, and whiteboards. Food arrangements will be made in the adjacent dining hall.",
-    link: "/venue-map.pdf",
-    linkText: "Download Map"
+    description: "To be announced soon!",
+    // fullContent: "Final venue details: Main presentations and opening ceremony will be in the Main Auditorium. Teams will have access to Computer Lab 1, Lab 2, and Conference Room A for development work. Each space has high-speed internet, power outlets, and whiteboards. Food arrangements will be made in the adjacent dining hall.",
+    // link: "/venue-map.pdf",
+    // linkText: "Download Map"
   },
   {
     id: 5,
     title: "Judging Panel Announced",
-    date: "2025-09-01",
+    date: "2025-09-05",
     type: "Results",
     isPinned: false,
     isNew: false,
-    description: "Meet our esteemed panel of judges including industry experts and senior faculty members.",
-    fullContent: "We're proud to announce our judging panel: Dr. Rajesh Kumar (IIT Delhi), Ms. Priya Sharma (Google India), Mr. Ankit Gupta (Startup Founder), Prof. Meera Singh (BTKIT), and Dr. Amit Verma (Microsoft). The judges will evaluate projects based on innovation, technical implementation, presentation, and real-world impact.",
-    link: "/judges-profile.pdf",
-    linkText: "View Profiles"
+    description: "To be announced soon!",
+    // fullContent: "We're proud to announce our judging panel: Dr. Rajesh Kumar (IIT Delhi), Ms. Priya Sharma (Google India), Mr. Ankit Gupta (Startup Founder), Prof. Meera Singh (BTKIT), and Dr. Amit Verma (Microsoft). The judges will evaluate projects based on innovation, technical implementation, presentation, and real-world impact.",
+    // link: "/judges-profile.pdf",
+    // linkText: "View Profiles"
   },
   {
     id: 6,
-    title: "Team Formation Guidelines",
-    date: "2025-08-28",
-    type: "Registration",
-    isPinned: false,
-    isNew: false,
-    description: "Important guidelines for team formation, member roles, and collaboration rules during the hackathon.",
-    fullContent: "Team formation rules: Maximum 4 members per team, at least one member should be from computer science/IT background, cross-departmental teams are encouraged. Teams can be formed until registration closes. Once registered, team changes are not allowed except in emergency situations with organizer approval.",
-    link: null,
-    linkText: null
-  }
+    title: "SIH Guidelines",
+    date: "2025-09-05",
+    type: "Guidelines",
+    isPinned: true,
+    isNew: true,
+    description: "Official Smart India Hackathon guidelines are available for reference.",
+    fullContent: "Participants are advised to carefully read the official Smart India Hackathon (SIH) guidelines before proceeding. The document includes SPOC Registration, Internal Hackathon, Team Formation and Registration, Team Nomination Process, Idea Submission Process, General Guideline and Contact Details. Familiarity with these guidelines is mandatory for all registered teams to ensure compliance throughout the hackathon.",
+    link: "/SIH Guidelines.pdf",
+    linkText: "View Guidelines"
+},
+{
+  id: 7,
+  title: "Idea Presentation Format",
+  date: "2025-09-05",
+  type: "Guidelines",
+  isPinned: true,
+  isNew: true,
+  description: "Official template for submitting ideas in Smart India Hackathon.",
+  fullContent: "All teams must prepare their idea submissions strictly according to the prescribed Smart India Hackathon (SIH) format. The document provides a standardized template for presenting the problem statement, team details, proposed solution, technical approach, and expected outcomes. Following this format is mandatory to ensure fair and consistent evaluation by the judges.",
+  link: "/SIH Idea Format.pptx",
+  linkText: "Download Format"
+}
+
+
+
+
+
+ 
 ];
 
 const NoticesPage = () => {
@@ -165,7 +184,7 @@ const NoticesPage = () => {
           </p>
         </div>
 
-        <DownloadButtons/>
+        {/* <DownloadButtons/> */}
 
         {/* Search and Filter Bar */}
         <div className="mb-12">
@@ -460,13 +479,10 @@ const QuickLinks = () => {
             <span className="text-gray-400">Total Notices:</span>
             <span className="font-semibold text-orange-400">{noticesData.length}</span>
           </div>
-          <div className="flex justify-between">
-            <span className="text-gray-400">Days to Event:</span>
-            <span className="font-semibold text-green-400">12</span>
-          </div>
+         
           <div className="flex justify-between">
             <span className="text-gray-400">Teams Registered:</span>
-            <span className="font-semibold text-blue-400">45+</span>
+            <span className="font-semibold text-blue-400">To be announced soon!</span>
           </div>
         </div>
       </div>
