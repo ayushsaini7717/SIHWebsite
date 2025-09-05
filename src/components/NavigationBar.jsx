@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 const NavigationBar = () => {
+  const navigate=useNavigate();
   return (
     <nav className="fixed top-0 left-0 w-full bg-slate-900 shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -7,8 +9,8 @@ const NavigationBar = () => {
           <a href="#home" className="text-gray-200 hover:text-orange-400">Home</a>
           <a href="#about" className="text-gray-200 hover:text-orange-400">About SIH</a>
           <a href="#timeline" className="text-gray-200 hover:text-orange-400">Timeline</a>
-          <a href="#prizes" className="text-gray-200 hover:text-orange-400">Prizes</a>
           <a href="#register" className="text-gray-200 hover:text-orange-400">Register</a>
+          <a onClick={()=>navigate('/info')} className="text-gray-200 hover:text-orange-400">Notices & Informations</a>
         </div>
       </div>
     </nav>
