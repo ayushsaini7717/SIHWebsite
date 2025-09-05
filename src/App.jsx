@@ -6,6 +6,7 @@ import PrizesSection from "./components/PrizesSection";
 import ProblemCategories from "./components/ProblemCategories";
 import RegistrationSection from "./components/RegistrationSection";
 import TimelineSection from "./components/TimelineSection";
+import FooterSection from "./components/FooterSection";
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
       <ProblemCategories/>
       <PrizesSection/>
       <RegistrationSection/>
-      {/* <TeamMatcher /> */}
+      
       <FAQSection/>
-      {/* <FooterSection /> */}
+      {/* <FooterSection/> */}
     </div>
   );
 }
