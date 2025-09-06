@@ -8,7 +8,7 @@ export default function useCountdown(targetDate) {
     const now = new Date().getTime();
     const distance = countDownDate - now;
 
-    // Stop at 0 once countdown ends
+    // Stop countdown at zero
     if (distance <= 0) {
       return { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }

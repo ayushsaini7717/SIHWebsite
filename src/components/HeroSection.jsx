@@ -2,7 +2,7 @@ import useCountdown from "../hooks/useCountdown";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
-  const targetDate = "2025-09-16T9:59:59";
+  const targetDate = "2025-09-16T10:00:00";
   const { days, hours, minutes, seconds } = useCountdown(targetDate);
   const navigator = useNavigate();
 
