@@ -7,6 +7,12 @@ export default function useCountdown(targetDate) {
   function getTimeRemaining() {
     const now = new Date().getTime();
     const distance = countDownDate - now;
+
+    // Stop at 0 once countdown ends
+    if (distance <= 0) {
+      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+    }
+
     return {
       days: Math.floor(distance / (1000 * 60 * 60 * 24)),
       hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
