@@ -17,6 +17,7 @@ function App() {
       <TimelineSection/>
       <ProblemCategories/>
       <RegistrationSection/>
+      <PrizesSection/>
       <FAQSection/>
       <FooterSection/>
     </div>
