@@ -23,9 +23,9 @@ const TimelineEvent = ({ event, delay }) => {
 const TimelineSection = () => {
   const events = [
     { date: "25 Aug 2025", title: "Problem Statement Release" },
-    { date: "10 Sep 2025", title: "Last Date for Team Registration" },
+    { date: "15 Sep 2025", title: "Last Date for Team Registration" },
     { date: "16 Sep 2025", title: "Internal Hackathon" },
-    { date: "18 Sep 2025", title: "Result Announcement of Internal Hackathon" },
+    { date: "18 Sep 2025", title: "Result Announcement of Internal Hackathon (Tentative)" },
     { date: "Dec 2025", title: "Grand Finale (National SIH)" },
   ];
 

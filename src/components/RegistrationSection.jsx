@@ -18,7 +18,7 @@ const RegistrationSection = () => {
 
       <div className="bg-white/10 backdrop-blur-md rounded-xl border border-white/20 p-6 text-left mb-8">
         <h3 className="text-xl font-semibold mb-4 text-orange-300">
-          ✅ Eligibility Criteria
+          Eligibility Criteria
         </h3>
         <ul className="list-disc list-inside space-y-2 text-gray-200">
           <li>

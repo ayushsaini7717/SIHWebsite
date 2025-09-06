@@ -5,7 +5,7 @@ const PrizesSection = () => {
 
       <p className="text-lg mb-6 text-gray-300 leading-relaxed">
         The hackathon is not just about winning, but about representing{" "}
-        <span className="font-semibold text-orange-400">BTKIT Dwarahat</span> 
+        <span className="font-semibold text-orange-400">BTKIT Dwarahat </span> 
         at the national level. The{" "}
         <span className="text-green-400 font-semibold">top 25 teams</span> will
         be shortlisted to represent our institute at{" "}
