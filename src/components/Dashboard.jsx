@@ -14,8 +14,8 @@ const noticesData = [
     isNew: true,
     description: "Hackathon registration is now open. Teams must finalize members before submitting.",
     fullContent: "We are excited to announce that hackathon registration is officially open! Teams are required to complete the registration form by the deadline. Please ensure that all team members' details are correctly filled in before submission. Late registrations will not be accepted.",
-    link: "https://forms.gle/PncEov3mr4jTDieR9",
-    linkText: "Register Now"
+    link: "/registration notice.jpeg",
+    linkText: "View"
   },
   {
     id: 2,
@@ -43,17 +43,18 @@ const noticesData = [
   },
 
   {
-    id: 4,
-    title: "Venue Confirmation",
-    date: "2025-09-05",
-    type: "General Info",
-    isPinned: false,
-    isNew: false,
-    description: "To be announced soon!",
-    // fullContent: "Final venue details: Main presentations and opening ceremony will be in the Main Auditorium. Teams will have access to Computer Lab 1, Lab 2, and Conference Room A for development work. Each space has high-speed internet, power outlets, and whiteboards. Food arrangements will be made in the adjacent dining hall.",
-    // link: "/venue-map.pdf",
-    // linkText: "Download Map"
-  },
+    "id": 4,
+    "title": "Venue Confirmation",
+    "date": "2025-09-06",
+    "type": "General Info",
+    "isPinned": false,
+    "isNew": false,
+    "description": "Final venue confirmed: CSE Smart Classroom.",
+    "fullContent": "All sessions and activities will be held in the CSE Smart Classroom.",
+    // "link": "/venue-map.pdf",
+    // "linkText": "Download Map"
+},
+
   {
     id: 5,
     title: "Judging Panel Announced",
