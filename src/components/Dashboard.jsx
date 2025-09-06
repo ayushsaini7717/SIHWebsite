@@ -52,7 +52,7 @@ const noticesData = [
 
   {
     id: 5,
-    title: "Judging Panel Announced",
+    title: "Result Announced",
     date: "2025-09-05",
     type: "Results",
     isPinned: false,
