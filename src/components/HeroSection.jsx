@@ -16,7 +16,7 @@ const HeroSection = () => {
       <img
         src="/btkitLOGO.png"
         alt="logo"
-        className="w-32 md:w-48 lg:w-56 h-auto mb-6"
+        className="w-32 md:w-48 lg:w-56 h-auto mb-6 mt-4"
       />
 
       {/* Title */}
