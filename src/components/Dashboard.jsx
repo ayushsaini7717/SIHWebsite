@@ -7,12 +7,12 @@ const noticesData = [
   {
     id: 1,
     title: "Hackathon Registration",
-    date: "2025-09-5",
+    date: "2025-09-6",
     type: "Registration",
     isPinned: true,
     isNew: true,
     description: "Hackathon registration is now open. Teams must finalize members before submitting.",
-    fullContent: "We are excited to announce that hackathon registration is officially open! Teams are required to complete the registration form by the deadline. Please ensure that all team members' details are correctly filled in before submission. Late registrations will not be accepted.",
+    fullContent: "We are excited to announce that hackathon registration is officially open! Teams are required to complete the registration form by the deadline(10 sept,2025). Please ensure that all team members' details are correctly filled in before submission. Late registrations will not be accepted.",
     link: "/registration notice.jpeg",
     linkText: "View"
   },
