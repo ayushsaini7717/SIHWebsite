@@ -14,12 +14,12 @@ function App() {
       <NavigationBar/>
       <HeroSection/>
       <AboutSIH/>
-      {/* <TimelineSection/>
+      <TimelineSection/> 
       <ProblemCategories/>
-      <RegistrationSection/>
-      <PrizesSection/>
-      <FAQSection/> */}
-      <FooterSection/>
+      {/* <RegistrationSection/> */}
+      {/* <PrizesSection/> */}
+      {/* <FAQSection/> */ }
+      {/* <FooterSection/> */}
     </div>
   );
 }

@@ -1,68 +1,125 @@
 import {
-  Rocket,
-  Cpu,
-  Dumbbell,
-  Landmark,
-  HeartPulse,
-  Sprout,
-  Car,
-  Truck,
-  Bot,
+  Mountain,
   Leaf,
-  Plane,
-  Sun,
-  ShieldCheck,
-  BookOpen,
-  AlertTriangle,
-  Puzzle,
-  Sparkles,
+  Zap,
+  Heart,
+  Brain,
+  Target,
+  Landmark,
+  Globe,
+  Code,
 } from "lucide-react";
 
 const categories = [
-  { name: "Space Technology", icon: Rocket },
-  { name: "Smart Automation", icon: Cpu },
-  { name: "Fitness & Sports", icon: Dumbbell },
-  { name: "Heritage & Culture", icon: Landmark },
-  { name: "MedTech / BioTech / HealthTech", icon: HeartPulse },
-  { name: "Agriculture, FoodTech & Rural Development", icon: Sprout },
-  { name: "Smart Vehicles", icon: Car },
-  { name: "Transportation & Logistics", icon: Truck },
-  { name: "Robotics and Drones", icon: Bot },
-  { name: "Clean & Green Technology", icon: Leaf },
-  { name: "Tourism", icon: Plane },
-  { name: "Renewable / Sustainable Energy", icon: Sun },
-  { name: "Blockchain & Cybersecurity", icon: ShieldCheck },
-  { name: "Smart Education", icon: BookOpen },
-  { name: "Disaster Management", icon: AlertTriangle },
-  { name: "Toys and Games", icon: Puzzle },
-  { name: "Miscellaneous", icon: Sparkles },
+  {
+    name: "Smart Tourism",
+    icon: Mountain,
+    description:
+      "Eco-tourism platforms, trekking safety, crowd management, and sustainable travel apps.",
+    color: "from-blue-500 to-cyan-400",
+  },
+  {
+    name: "Agriculture & Rural Development",
+    icon: Leaf,
+    description:
+      "Smart irrigation, crop monitoring, digital marketplaces, and rural innovation systems.",
+    color: "from-green-500 to-emerald-400",
+  },
+  {
+    name: "Disaster Management",
+    icon: Zap,
+    description:
+      "Early warning systems for landslides, floods, fire detection, and rescue coordination.",
+    color: "from-red-500 to-orange-400",
+  },
+  {
+    name: "Healthcare & MedTech",
+    icon: Heart,
+    description:
+      "Telemedicine, local health kiosks, ambulance route optimization, and AI-driven diagnosis.",
+    color: "from-pink-500 to-rose-400",
+  },
+  {
+    name: "Education & Skill Development",
+    icon: Brain,
+    description:
+      "AR/VR-based learning, career guidance systems, and digital classroom innovation.",
+    color: "from-orange-400 to-yellow-400",
+  },
+  {
+    name: "Governance & e-Governance",
+    icon: Target,
+    description:
+      "Public grievance portals, fund tracking, e-Panchayat systems, and smart record management.",
+    color: "from-teal-400 to-cyan-500",
+  },
+  {
+    name: "Heritage & Culture",
+    icon: Landmark,
+    description:
+      "Digital museums, local arts promotion, cultural tourism, and preservation of regional crafts.",
+    color: "from-indigo-500 to-purple-500",
+  },
+  {
+    name: "Renewable & Clean Energy",
+    icon: Globe,
+    description:
+      "Solar IoT, microgrids, waste-to-energy, and carbon footprint tracking tools.",
+    color: "from-yellow-400 to-green-400",
+  },
+  {
+    name: "Open Innovation",
+    icon: Code,
+    description:
+      "Any Uttarakhand-focused idea that fosters innovation and technology-driven development.",
+    color: "from-purple-500 to-blue-500",
+  },
 ];
 
 const ProblemCategories = () => {
   return (
-    <section id="categories" className="py-20 px-6 max-w-6xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-10 text-green-400">
-        Problem Categories (SIH 2025 Themes)
+    <section id="categories" className="py-20 px-6 max-w-6xl mx-auto">
+      <h2 className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+        Problem Domains
       </h2>
-      <div className="grid md:grid-cols-3 gap-6 mb-12">
-        {categories.map(({ name, icon: Icon }, idx) => (
+      <p className="text-center text-gray-400 mb-10">
+        Explore 9 domains aligned with the theme:{" "}
+        <span className="text-green-400 font-semibold">
+          “Innovative Design for a Sustainable Future”
+        </span>
+      </p>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {categories.map((cat, idx) => (
           <div
             key={idx}
-            className="p-6 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 hover:scale-105 transform transition duration-300 flex flex-col items-center"
+            className="p-6 bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:bg-white/15 hover:border-green-400/50"
           >
-            <Icon className="w-10 h-10 mb-4 text-orange-400" />
-            <h3 className="text-lg font-semibold text-orange-300">{name}</h3>
+            <div
+              className={`w-12 h-12 rounded-lg bg-gradient-to-br ${cat.color} flex items-center justify-center mb-4`}
+            >
+              <cat.icon className="w-6 h-6 text-white" />
+            </div>
+            <h3 className="text-lg font-semibold text-white mb-2">
+              {cat.name}
+            </h3>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              {cat.description}
+            </p>
           </div>
         ))}
       </div>
-      <a
-        href="https://www.sih.gov.in/sih2025PS"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-8 py-3 bg-orange-500 hover:bg-orange-600 rounded-xl text-white font-semibold shadow-lg"
-      >
-        View Problem Statements
-      </a>
+
+      <div className="text-center mt-12">
+        <a
+          href="https://docs.google.com/document/d/1tq-xbL0CzQRz0ZKflqKFMv3a8s1jJj8sE2NwbvtiC8Y/edit?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition-transform"
+        >
+          View Detailed Problem Statements
+        </a>
+      </div>
     </section>
   );
 };

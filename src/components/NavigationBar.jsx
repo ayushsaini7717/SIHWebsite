@@ -44,7 +44,7 @@ const NavigationBar = () => {
       {isOpen && (
         <div className="md:hidden bg-slate-800 border-t border-gray-700 px-6 py-4 space-y-4">
           <a href="#home" className="block text-gray-200 hover:text-orange-400">Home</a>
-          <a href="#about" className="block text-gray-200 hover:text-orange-400">About SIH</a>
+          <a href="#about" className="block text-gray-200 hover:text-orange-400">About</a>
           <a href="#timeline" className="block text-gray-200 hover:text-orange-400">Timeline</a>
           <a href="#register" className="block text-gray-200 hover:text-orange-400">Register</a>
           <button
