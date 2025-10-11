@@ -18,7 +18,7 @@ function App() {
       <ProblemCategories/>
       {/* <RegistrationSection/> */}
       <PrizesSection/>
-      {/* <FAQSection/> */ }
+      <FAQSection/>
       {/* <FooterSection/> */}
     </div>
   );
