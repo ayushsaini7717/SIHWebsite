@@ -32,7 +32,7 @@ const HeroSection = () => {
       </h2>
 
       <p className="text-xl mb-8 text-gray-300 italic">
-        "Vikshit Uttarakhand – Empowering through Innovation"
+        "Vikshit Uttarakhand - Empowering through Innovation"
       </p>
 
       {/* Countdown Timer */}
