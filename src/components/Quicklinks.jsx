@@ -4,7 +4,7 @@ import {
 import { noticesData } from '../constant';
 const QuickLinks = () => {
   const quickLinks = [
-    { title: 'Register Now', description: 'Join the competition', icon: <Users />, link: 'https://forms.gle/PncEov3mr4jTDieR9', color: 'bg-green-600 hover:bg-green-700' },
+    { title: 'Register Now', description: 'Join the competition', icon: <Users />, link: 'https://forms.gle/gZa89ebiPEFsMr4H6', color: 'bg-green-600 hover:bg-green-700' },
     { title: 'Timeline', description: 'Event schedule', icon: <Calendar />, link: '/#timeline', color: 'bg-blue-600 hover:bg-blue-700' }
   ];
 
