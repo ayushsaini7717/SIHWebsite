@@ -16,6 +16,7 @@ const HeroSection = () => {
         alt="BTKIT Logo"
         className="w-full max-w-[180px] h-auto mb-4 mt-6 md:mt-10"
       />
+      
 
       <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">
         Uttarakhand Tech-Hackathon 2025
