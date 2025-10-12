@@ -53,7 +53,7 @@ const HeroSection = () => {
       <div className="flex flex-col sm:flex-row sm:items-center gap-4">
         <button
           onClick={() =>
-            window.open("https://forms.gle/cPSbdNEQMMkcoNX3A", "_blank")
+            window.open("https://forms.gle/gZa89ebiPEFsMr4H6", "_blank")
           }
           className="px-8 py-3 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold shadow-lg transition-all "
         >
