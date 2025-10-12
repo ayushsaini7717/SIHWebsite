@@ -15,15 +15,15 @@ export const noticesData = [
   },
   {
     id: 2,
-    title: "Hackathon Problem Statements Released",
+    title: "Hackathon Themes Released",
     date: "2025-10-10",
     type: "General Info",
     isPinned: true,
     isNew: false,
     description:
-      "Problem statements for the Uttarakhand Tech-Hackathon 2025 have been released. Teams can now select their preferred domain and start ideation.",
+      "Themes for the Uttarakhand Tech-Hackathon 2025 have been released. Teams can now select their preferred domain and start ideation.",
     fullContent:
-      "The official problem statements for the Uttarakhand Tech-Hackathon 2025 are now available. The main theme is 'Vikshit Uttarakhand – Empowering through Innovation'. The domains include: (1) Smart Tourism & Eco-Conservation, (2) Sustainable Agriculture & Rural Development, (3) Disaster Management & Environmental Safety, (4) Education & Youth Empowerment, (5) Healthcare & Wellness in Hilly Areas, (6) Smart Governance & Digital Uttarakhand, (7) Renewable Energy & Green Technology, and (8) Cultural Heritage & Local Entrepreneurship. Teams are encouraged to select a problem statement that aligns with their interests and begin preparation.",
+      "The official Themes for the Uttarakhand Tech-Hackathon 2025 are now available. The main theme is 'Vikshit Uttarakhand – Empowering through Innovation'. The domains include: (1) Smart Tourism & Eco-Conservation, (2) Sustainable Agriculture & Rural Development, (3) Disaster Management & Environmental Safety, (4) Education & Youth Empowerment, (5) Healthcare & Wellness in Hilly Areas, (6) Smart Governance & Digital Uttarakhand, (7) Renewable Energy & Green Technology, and (8) Cultural Heritage & Local Entrepreneurship. Teams are encouraged to select a problem statement that aligns with their interests and begin preparation.",
     link: "/hon.pdf",
     linkText: "View Problems"
   },
