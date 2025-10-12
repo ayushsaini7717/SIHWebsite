@@ -4,66 +4,47 @@ const AboutSection = () => {
       id="about"
       className="py-20 px-6 max-w-5xl mx-auto text-center text-gray-200"
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-        About the Hackathon
+      <h2 className="text-3xl font-bold mb-6 text-white">
+        About Uttarakhand Tech Hackathon 2025
       </h2>
-      <p className="mb-6 text-gray-300 leading-relaxed">
-        On the auspicious occasion of{" "}
-        <span className="text-green-400 font-semibold">
-          Uttarakhand Foundation Day
-        </span>
-        , the Department of Computer Science & Engineering,{" "}
-        <span className="text-blue-400 font-semibold">
-          Bipin Tripathi Kumaon Institute of Technology, Dwarahat
+      <p className="text-lg leading-relaxed mb-4">
+        On the auspicious occasion of <span className="text-green-400 font-semibold">Uttarakhand Foundation Day</span>,
+        the <span className="text-orange-400 font-semibold">Department of Computer Science & Engineering</span>, BTKIT
+        Dwarahat is organizing a state-level hackathon titled{" "}
+        <span className="font-semibold text-white">
+          “Uttarakhand Tech-Hackathon 2025”
         </span>{" "}
-        is organizing a state-level event -{" "}
-        <span className="font-semibold text-green-400">
-          Uttarakhand Tech-Hackathon 2025
-        </span>{" "}
-        under the theme{" "}
-        <span className="text-orange-400 italic">
-          “Technical Education Over the Years.”
-        </span>
+        under the theme <span className="italic text-blue-400">“Technical Education Over the Years.”</span>
       </p>
 
-      <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 text-left space-y-3 max-w-3xl mx-auto">
-        <ul className="list-disc list-inside text-gray-300 text-sm md:text-base space-y-2">
-          <li>
-            <strong>Event:</strong> Uttarakhand Tech-Hackathon 2025
-          </li>
-          <li>
-            <strong>Date & Venue:</strong> 4th November 2025, CSE Smart Classroom, BTKIT Dwarahat
-          </li>
-          <li>
-            <strong>Team Formation:</strong> Each team must consist of 4 members
-            (all from BTKIT; no inter-college teams).
-          </li>
-          <li>
-            <strong>Domains:</strong> Software and Hardware problem statements.
-          </li>
-          <li>
-            <strong>Evaluation Criteria:</strong> Innovation, Feasibility,
-            Technical Approach, and Societal Impact.
-          </li>
-          <li>
-            <strong>Selection:</strong> Top 3 teams will be shortlisted to
-            represent BTKIT at the State Level Hackathon.
-          </li>
-          <li>
-            <strong>Registration:</strong> Submit your team details through the
-            official link below.
-          </li>
+      <p className="text-base mb-4">
+        The hackathon aims to provide students with an opportunity to showcase
+        innovative solutions addressing real-world challenges faced in the
+        Himalayan state of Uttarakhand. It encourages participants to develop
+        projects in both <span className="text-green-400 font-semibold">Software</span> and{" "}
+        <span className="text-green-400 font-semibold">Hardware</span> domains.
+      </p>
+
+      <p className="text-base mb-4">
+        The event emphasizes creative problem-solving, sustainable technology
+        development, and the application of modern engineering skills to promote
+        the vision of <span className="text-blue-400 font-semibold">“Vikshit Uttarakhand – Empowering through Innovation.”</span>
+      </p>
+
+      <div className="bg-slate-800 border border-white/10 rounded-xl p-6 mt-8 text-left">
+        <h3 className="text-xl font-bold text-orange-400 mb-3 text-center">
+          Key Details
+        </h3>
+        <ul className="space-y-2 text-gray-300">
+          <li>📅 <strong>Date:</strong> November 4, 2025</li>
+          <li>📍 <strong>Venue:</strong> CSE Smart Classroom, BTKIT Dwarahat</li>
+          <li>👥 <strong>Team Size:</strong> 4 Members (All from BTKIT)</li>
+          <li>🧩 <strong>Domains:</strong> Software & Hardware Problem Statements</li>
+          <li>🏆 <strong>Selection:</strong> Top 3 teams will represent BTKIT at the State-Level Round</li>
+          <li>📝 <strong>Registration:</strong> Through the official link provided on this website</li>
+          <li>⚙️ <strong>Evaluation:</strong> Based on Innovation, Feasibility, Technical Approach & Societal Impact</li>
         </ul>
       </div>
-
-      <a
-        href="https://forms.gle/cPSbdNEQMMkcoNX3A"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block px-8 py-3 mt-8 bg-green-600 hover:bg-green-700 rounded-xl text-white font-semibold shadow-lg transition-all"
-      >
-        Go to Registration Form
-      </a>
     </section>
   );
 };
