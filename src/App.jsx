@@ -1,4 +1,4 @@
-import AboutSIH from "./components/AboutSIH";
+import About from "./components/About";
 import FAQSection from "./components/FAQSection";
 import HeroSection from "./components/HeroSection";
 import NavigationBar from "./components/NavigationBar";
@@ -13,7 +13,7 @@ function App() {
     <div className="bg-slate-900 text-white">
       <NavigationBar/>
       <HeroSection/>
-      <AboutSIH/>
+      <About/>
       <TimelineSection/> 
       <ProblemCategories/>
       {/* <RegistrationSection/> */}

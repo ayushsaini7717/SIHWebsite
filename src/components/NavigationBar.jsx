@@ -23,7 +23,7 @@ const NavigationBar = () => {
         {/* Desktop Menu */}
         <div className="space-x-6 hidden md:flex">
           <a href="#home" className="text-gray-200 hover:text-orange-400">Home</a>
-          <a href="#about" className="text-gray-200 hover:text-orange-400">About SIH</a>
+          <a href="#about" className="text-gray-200 hover:text-orange-400">About</a>
           <a href="#timeline" className="text-gray-200 hover:text-orange-400">Timeline</a>
           <a href="#register" className="text-gray-200 hover:text-orange-400">Register</a>
           <button onClick={() => navigate('/info')} className="text-gray-200 hover:text-orange-400">
