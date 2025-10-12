@@ -1,89 +1,68 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
     q: "Who can participate?",
-    a: "Only students from BTKIT Dwarahat (UG/PG) are eligible to participate. Teams must register through the official Google Form link.",
+    a: "All students of BTKIT Dwarahat (UG and PG) are eligible to participate. Inter-college teams are not allowed.",
   },
   {
-    q: "How many members can be in a team?",
-    a: "Each team can have 2 to 4 members, and it is encouraged to include at least one female participant.",
+    q: "How many members are allowed in a team?",
+    a: "Each team must consist of exactly 4 members. All members must be from BTKIT, Dwarahat.",
   },
   {
-    q: "What are the stages of the hackathon?",
-    a: "The competition is held in multiple stages: Stage 1 — College Level Screening (30 teams shortlisted), Stage 2 — Semi-Finals (10 best teams), Stage 3 — State Finals (Top 3 teams represent BTKIT).",
+    q: "What are the domains for the hackathon?",
+    a: "Both Software and Hardware problem statements are available. Domains include Smart Tourism, Agriculture, Disaster Management, Education, Healthcare, Governance, Renewable Energy, Cultural Heritage, and Open Innovation.",
   },
   {
-    q: "What are the problem statement domains?",
-    a: "Nine domains: Smart Tourism, Agriculture, Disaster Management, Healthcare, Education, Governance, Renewable Energy, Cultural Heritage, and Open Innovation.",
+    q: "When and where will the event take place?",
+    a: "The internal college-level hackathon will be held on November 4th, 2025 at the CSE Smart Classroom, BTKIT Dwarahat.",
   },
   {
-    q: "What is the judging criteria?",
-    a: "Projects will be evaluated on: Creativity (25%), Feasibility (25%), Innovation (25%), and Presentation (25%).",
+    q: "What is the evaluation or judging criteria?",
+    a: "Teams will be judged based on Innovation, Feasibility, Technical Approach, and Societal Impact.",
   },
   {
-    q: "How to register?",
-    a: "Click on the 'Register Now' button on the home page. It redirects to the official Google Form where teams can fill in their details.",
+    q: "How can we register for the hackathon?",
+    a: "Click on the 'Register Now' button on this website. You will be redirected to the Google Form to fill in your team details and submit your registration.",
   },
   {
-    q: "What is the theme of the hackathon?",
-    a: "Theme: 'Innovative Design for Sustainable Future' — fostering technology-driven ideas that solve real challenges in Uttarakhand.",
-  },
-  {
-    q: "What happens after selection?",
-    a: "Top 3 teams from BTKIT will be nominated to participate in the Uttarakhand State Level Hackathon 2025.",
-  },
-  {
-    q: "Where will the hackathon be conducted?",
-    a: "Venue: CSE Smart Classroom, BTKIT Dwarahat.",
-  },
+    q: "What is the selection process?",
+    a: "Top 3 teams from BTKIT will be selected at the college-level event to represent the institute at the Uttarakhand State-Level Tech Hackathon 2025.",
+  }
 ];
 
 const FAQSection = () => {
   const [open, setOpen] = useState(null);
 
   return (
-    <section id="faq" className="py-20 px-6 max-w-4xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-        Frequently Asked Questions
+    <section id="faq" className="py-20 px-6 max-w-3xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-6 text-white">
+        Frequently Asked Questions (FAQ)
       </h2>
 
       <div className="space-y-4">
         {faqs.map((faq, idx) => (
           <div
             key={idx}
-            className="backdrop-blur-lg bg-slate-800/70 border border-white/10 rounded-xl shadow-lg hover:shadow-green-500/10 transition-all duration-300"
+            className="backdrop-blur-lg bg-slate-800 border border-white/10 rounded-lg overflow-hidden transition-all"
           >
             <button
               onClick={() => setOpen(open === idx ? null : idx)}
-              className="w-full flex justify-between items-center p-5 text-left"
+              className="w-full text-left p-4 font-semibold text-white flex justify-between items-center"
             >
-              <span className="text-base md:text-lg font-semibold text-white">
-                {faq.q}
+              {faq.q}
+              <span className="text-orange-400">
+                {open === idx ? "−" : "+"}
               </span>
-              <ChevronDown
-                className={`w-5 h-5 text-green-400 transition-transform duration-300 ${
-                  open === idx ? "rotate-180" : ""
-                }`}
-              />
             </button>
-
             {open === idx && (
-              <div className="p-5 pt-0 text-gray-300 text-sm md:text-base border-t border-white/10">
+              <p className="p-4 text-gray-300 border-t border-white/10 text-sm leading-relaxed">
                 {faq.a}
-              </div>
+              </p>
             )}
           </div>
         ))}
       </div>
-
-      {/* <p className="text-center text-gray-400 text-sm mt-10">
-        Still have questions? Contact{" "}
-        <span className="text-green-400 font-semibold">
-          Dr. Sachin Gaur (Coordinator) - 9412912342
-        </span>
-      </p> */}
     </section>
   );
 };
