@@ -1,124 +1,95 @@
-import {
-  Mountain,
-  Leaf,
-  Zap,
-  Heart,
-  Brain,
-  Target,
-  Landmark,
-  Globe,
-  Code,
-} from "lucide-react";
+import { Leaf, Zap, Heart, BookOpen, Landmark, Mountain, Cpu, Sun, Globe } from "lucide-react";
 
-const categories = [
+const domains = [
   {
-    name: "Smart Tourism",
+    title: "Smart Tourism & Eco-Conservation",
+    description:
+      "Smart trekking apps, eco-tourism platforms, waste management & real-time weather alerts for hill areas.",
     icon: Mountain,
-    description:
-      "Eco-tourism platforms, trekking safety, crowd management, and sustainable travel apps.",
-    color: "from-blue-500 to-cyan-400",
+    color: "bg-blue-600",
   },
   {
-    name: "Agriculture & Rural Development",
+    title: "Sustainable Agriculture & Rural Development",
+    description:
+      "Smart irrigation, AI-based crop health monitoring, e-marketplace, and rural livelihood support.",
     icon: Leaf,
-    description:
-      "Smart irrigation, crop monitoring, digital marketplaces, and rural innovation systems.",
-    color: "from-green-500 to-emerald-400",
+    color: "bg-green-600",
   },
   {
-    name: "Disaster Management",
+    title: "Disaster Management & Environmental Safety",
+    description:
+      "Drone-based fire detection, landslide warning systems, and real-time flood monitoring.",
     icon: Zap,
-    description:
-      "Early warning systems for landslides, floods, fire detection, and rescue coordination.",
-    color: "from-red-500 to-orange-400",
+    color: "bg-red-600",
   },
   {
-    name: "Healthcare & MedTech",
+    title: "Education & Youth Empowerment",
+    description:
+      "AR/VR learning for remote schools, AI tutors, career guidance chatbots, and skill development platforms.",
+    icon: BookOpen,
+    color: "bg-orange-600",
+  },
+  {
+    title: "Healthcare & Wellness in Hilly Areas",
+    description:
+      "Telemedicine, health kiosks, maternal health apps, and ambulance optimization for hill terrain.",
     icon: Heart,
-    description:
-      "Telemedicine, local health kiosks, ambulance route optimization, and AI-driven diagnosis.",
-    color: "from-pink-500 to-rose-400",
+    color: "bg-pink-600",
   },
   {
-    name: "Education & Skill Development",
-    icon: Brain,
+    title: "Smart Governance & Digital Uttarakhand",
     description:
-      "AR/VR-based learning, career guidance systems, and digital classroom innovation.",
-    color: "from-orange-400 to-yellow-400",
-  },
-  {
-    name: "Governance & e-Governance",
-    icon: Target,
-    description:
-      "Public grievance portals, fund tracking, e-Panchayat systems, and smart record management.",
-    color: "from-teal-400 to-cyan-500",
-  },
-  {
-    name: "Heritage & Culture",
+      "e-Panchayat systems, fund utilization trackers, and grievance redressal apps for hill regions.",
     icon: Landmark,
-    description:
-      "Digital museums, local arts promotion, cultural tourism, and preservation of regional crafts.",
-    color: "from-indigo-500 to-purple-500",
+    color: "bg-teal-600",
   },
   {
-    name: "Renewable & Clean Energy",
+    title: "Renewable Energy & Green Technology",
+    description:
+      "Solar IoT devices, microgrid management, green energy tracking, and small-scale hydro solutions.",
+    icon: Sun,
+    color: "bg-yellow-600",
+  },
+  {
+    title: "Cultural Heritage & Local Entrepreneurship",
+    description:
+      "Digital museums, AI-based language preservation, and online handicraft & organic product platforms.",
     icon: Globe,
-    description:
-      "Solar IoT, microgrids, waste-to-energy, and carbon footprint tracking tools.",
-    color: "from-yellow-400 to-green-400",
+    color: "bg-purple-600",
   },
   {
-    name: "Open Innovation",
-    icon: Code,
+    title: "Open Innovation in Technical Education",
     description:
-      "Any Uttarakhand-focused idea that fosters innovation and technology-driven development.",
-    color: "from-purple-500 to-blue-500",
+      "Any innovative solution that empowers Uttarakhand through technology and education.",
+    icon: Cpu,
+    color: "bg-gray-700",
   },
 ];
 
 const ProblemCategories = () => {
   return (
-    <section id="categories" className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-10 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+    <section id="categories" className="py-20 px-6 max-w-7xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
         Problem Domains
       </h2>
-      <p className="text-center text-gray-400 mb-10">
-        Explore 9 domains aligned with the theme:{" "}
-        <span className="text-green-400 font-semibold">
-          “Innovative Design for a Sustainable Future”
-        </span>
+      <p className="text-center text-gray-300 mb-8 max-w-3xl mx-auto">
+        Explore the 9 key domains for the <span className="text-green-400">Uttarakhand Tech-Hackathon 2025</span>, 
+        focusing on sustainable innovation, rural empowerment, and regional development.
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {categories.map((cat, idx) => (
+        {domains.map((domain, idx) => (
           <div
             key={idx}
-            className="p-6 bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:bg-white/15 hover:border-green-400/50"
+            className={`p-6 ${domain.color} text-white rounded-xl shadow-lg hover:scale-105 transform transition-all`}
           >
-            <div
-              className={`w-12 h-12 rounded-lg bg-gradient-to-br ${cat.color} flex items-center justify-center mb-4`}
-            >
-              <cat.icon className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-3 mb-3">
+              <domain.icon className="w-7 h-7 text-white" />
+              <h3 className="text-lg font-semibold">{domain.title}</h3>
             </div>
-            <h3 className="text-lg font-semibold text-white mb-2">
-              {cat.name}
-            </h3>
-            <p className="text-sm text-gray-300 leading-relaxed">
-              {cat.description}
-            </p>
+            <p className="text-sm text-gray-100">{domain.description}</p>
           </div>
         ))}
-      </div>
-
-      <div className="text-center mt-12">
-        <a
-          href="https://docs.google.com/document/d/1tq-xbL0CzQRz0ZKflqKFMv3a8s1jJj8sE2NwbvtiC8Y/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-6 py-3 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-xl shadow-lg hover:scale-105 transition-transform"
-        >
-          View Detailed Problem Statements
-        </a>
       </div>
     </section>
   );

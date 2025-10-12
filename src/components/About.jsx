@@ -16,7 +16,7 @@ const AboutSection = () => {
         <span className="text-blue-400 font-semibold">
           Bipin Tripathi Kumaon Institute of Technology, Dwarahat
         </span>{" "}
-        is organizing a state-level event —{" "}
+        is organizing a state-level event -{" "}
         <span className="font-semibold text-green-400">
           Uttarakhand Tech-Hackathon 2025
         </span>{" "}
