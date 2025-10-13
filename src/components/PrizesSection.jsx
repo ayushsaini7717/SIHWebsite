@@ -12,21 +12,21 @@ const PrizesSection = () => {
             College Level Hackathon
           </h3>
           <p className="text-gray-300 text-sm mb-4">
-            The internal hackathon will be held at BTKIT Dwarahat. The top 3 teams will be selected to represent the institute at the State-Level Hackathon.
+            The internal hackathon will be held at BTKIT Dwarahat. The top 3 teams will be selected to represent the institute at the State-Level.
           </p>
 
           <div className="space-y-3 text-left text-gray-200">
             <div className="flex justify-between bg-slate-700 rounded-lg px-4 py-2">
               <span>🥇 1st Prize</span>
-              <span className="font-semibold text-yellow-400">₹15,000</span>
+              {/* <span className="font-semibold text-yellow-400">₹15,000</span> */}
             </div>
             <div className="flex justify-between bg-slate-700 rounded-lg px-4 py-2">
               <span>🥈 2nd Prize</span>
-              <span className="font-semibold text-gray-300">₹10,000</span>
+              {/* <span className="font-semibold text-gray-300">₹10,000</span> */}
             </div>
             <div className="flex justify-between bg-slate-700 rounded-lg px-4 py-2">
               <span>🥉 3rd Prize</span>
-              <span className="font-semibold text-orange-400">₹5,000</span>
+              {/* <span className="font-semibold text-orange-400">₹5,000</span> */}
             </div>
           </div>
 
