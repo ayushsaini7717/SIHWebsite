@@ -65,6 +65,9 @@ const HeroSection = () => {
         >
           Notices & Information
         </button>
+        <button onClick={()=> navigator("/cultural")} className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-white font-semibold shadow-lg transition-all">
+          Cultural Events
+        </button>
       </div>
 
       <p className="text-s text-gray-400 mt-6">
