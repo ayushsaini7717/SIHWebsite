@@ -5,7 +5,7 @@ import useIntersectionObserver from "../hooks/useIntersectionObserver";
 const TimelineSection = () => {
   const events = [
     {
-      date: "Till 18th October 2025",
+      date: "Till 24th October 2025",
       title: "Registration Phase",
       detail: "Team registrations open for BTKIT students (4 members per team).",
     },
