@@ -7,7 +7,7 @@ const TimelineSection = () => {
     {
       date: "Till 24th October 2025",
       title: "Registration Phase",
-      detail: "Team registrations open for BTKIT students (4 members per team).",
+      detail: "Team registrations open for BTKIT students (4-6 members (atleast one female)).",
     },
     {
       date: "30th Octoer 2025 (Updated)",

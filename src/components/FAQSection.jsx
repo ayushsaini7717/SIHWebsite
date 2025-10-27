@@ -1,38 +1,50 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const faqs = [
   {
     q: "Who can participate?",
-    a: "All students of BTKIT Dwarahat (UG and PG) are eligible to participate. Inter-college teams are not allowed.",
+    a: "All students enrolled in AICTE or University-affiliated institutes or colleges across Uttarakhand can participate. Only students of BTKIT Dwarahat can register for the internal institute-level round.",
   },
   {
     q: "How many members are allowed in a team?",
-    a: "Each team must consist of exactly 4 members. All members must be from BTKIT, Dwarahat.",
+    a: "Each team must consist of 4–6 members, with at least one female participant. A faculty mentor from the institute must guide every team.",
   },
   {
-    q: "What are the domains for the hackathon?",
-    a: "Both Software and Hardware problem statements are available. Domains include Smart Tourism, Agriculture, Disaster Management, Education, Healthcare, Governance, Renewable Energy, Cultural Heritage, and Open Innovation.",
+    q: "What are the domains or themes for the hackathon?",
+    a: "The hackathon will cover multiple AI and Coding-based domains: Smart Education, AI in Agriculture, Forestry, Health, Tourism, Cybersecurity, and Indian Languages.",
   },
   {
     q: "When and where will the event take place?",
-    a: "The internal college-level hackathon will be held on October 30th, 2025 at the CSE Smart Classroom, BTKIT Dwarahat.",
+    a: "The internal institute-level hackathon will be organized between October 16 and October 30, 2025, at the CSE Smart Classroom, BTKIT Dwarahat. The top 3 selected teams will participate in the Final State-Level Hackathon in Dehradun from November 2 to 9, 2025.",
   },
   {
     q: "What is the evaluation or judging criteria?",
-    a: "Teams will be judged based on Innovation, Feasibility, Technical Approach, and Societal Impact.",
+    a: "Teams will be evaluated on the basis of Innovation, Relevance to the problem statement, Technical Feasibility, Scalability, Presentation, and Societal Impact.",
   },
   {
     q: "How can we register for the hackathon?",
-    a: "Click on the 'Register Now' button on this website. You will be redirected to the Google Form to fill in your team details and submit your registration.",
+    a: "Participants can register through the official link provided on this website. Each team must choose one problem statement and submit an idea summary with a proposed solution.",
   },
   {
     q: "What is the selection process?",
-    a: "Top 3 teams from BTKIT will be selected at the college-level event to represent the institute at the Uttarakhand State-Level Tech Hackathon 2025.",
-  }
+    a: "Each institute will shortlist its top 3 teams based on evaluation parameters. These teams will then represent their institute at the State-Level Hackathon in Dehradun during the Silver Jubilee Celebration of Uttarakhand’s formation.",
+  },
+  {
+    q: "Is there any time limit for idea submission?",
+    a: "Yes. Teams will get 72 hours to submit their idea or solution once the hackathon begins at the institute level.",
+  },
+  {
+    q: "Who are the state-level coordinators?",
+    a: "Prof. S. K. Pradhan (Director, THDC-IHET, Tehri) is the State-Level Nodal Coordinator. Contact: director@thdcihet.ac.in | +91-9300802353.",
+  },
 ];
 
 const FAQSection = () => {
-  const [open, setOpen] = useState(null);
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (idx) => {
+    setOpenIndex(openIndex === idx ? null : idx);
+  };
 
   return (
     <section id="faq" className="py-20 px-6 max-w-3xl mx-auto">
@@ -47,15 +59,17 @@ const FAQSection = () => {
             className="backdrop-blur-lg bg-slate-800 border border-white/10 rounded-lg overflow-hidden transition-all"
           >
             <button
-              onClick={() => setOpen(open === idx ? null : idx)}
+              onClick={() => toggle(idx)}
               className="w-full text-left p-4 font-semibold text-white flex justify-between items-center"
+              type="button"
             >
               {faq.q}
               <span className="text-orange-400">
-                {open === idx ? "−" : "+"}
+                {openIndex === idx ? "−" : "+"}
               </span>
             </button>
-            {open === idx && (
+
+            {openIndex === idx && (
               <p className="p-4 text-gray-300 border-t border-white/10 text-sm leading-relaxed">
                 {faq.a}
               </p>
