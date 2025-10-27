@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "When and where will the event take place?",
-    a: "The internal college-level hackathon will be held on November 4th, 2025 at the CSE Smart Classroom, BTKIT Dwarahat.",
+    a: "The internal college-level hackathon will be held on October 30th, 2025 at the CSE Smart Classroom, BTKIT Dwarahat.",
   },
   {
     q: "What is the evaluation or judging criteria?",

@@ -36,7 +36,7 @@ const AboutSection = () => {
           Key Details
         </h3>
         <ul className="space-y-2 text-gray-300">
-          <li>📅 <strong>Date:</strong> November 4, 2025</li>
+          <li>📅 <strong>Date:</strong> October 30, 2025</li>
           <li>📍 <strong>Venue:</strong> CSE Smart Classroom, BTKIT Dwarahat</li>
           <li>👥 <strong>Team Size:</strong> 4 Members (All from BTKIT)</li>
           <li>🧩 <strong>Domains:</strong> Software & Hardware Problem Statements</li>

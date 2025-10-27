@@ -2,7 +2,7 @@ import useCountdown from "../hooks/useCountdown";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
-  const targetDate = "2025-11-04T09:59:59"; // Countdown till 4th Nov 2025, 9:59:59 AM
+  const targetDate = "2025-10-30T09:59:59"; // Countdown till october 30th 2025, 9:59:59 AM
   const { days, hours, minutes, seconds } = useCountdown(targetDate);
   const navigator = useNavigate();
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
       {/* Footer Text */}
       <p className="text-xs sm:text-sm md:text-base text-gray-400 mt-6">
         Organized on{" "}
-        <span className="text-green-400">4th November 2025</span> | Theme:{" "}
+        <span className="text-green-400">30th October 2025</span> | Theme:{" "}
         <span className="text-blue-400">Vikshit Uttarakhand</span>
       </p>
     </section>
