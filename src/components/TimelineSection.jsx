@@ -10,7 +10,7 @@ const TimelineSection = () => {
       detail: "Team registrations open for BTKIT students (4 members per team).",
     },
     {
-      date: "4th November 2025",
+      date: "30th Octoer 2025 (Updated)",
       title: "College Level Hackathon",
       detail: "Teams will present their solutions during the internal hackathon held at BTKIT, Dwarahat. Top 3 teams will be selected.",
     },
