@@ -15,7 +15,7 @@ const TimelineSection = () => {
       detail: "Teams will present their solutions during the internal hackathon held at BTKIT, Dwarahat. Top 3 teams will be selected.",
     },
     {
-      date: "Date to be Announced",
+      date: "2nd-9th November 2025",
       title: "State Level Hackathon",
       detail: "Selected top 3 teams from BTKIT will represent the institute at the State-Level Uttarakhand Tech Hackathon 2025.",
     },
