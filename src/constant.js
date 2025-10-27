@@ -2,17 +2,17 @@ export const noticesData = [
   {
     id: 1,
     title: "Uttarakhand Tech-Hackathon 2025 Announcement",
-    date: "2025-10-10",
+    date: "2025-10-27",
     type: "Event Notice",
     isPinned: true,
     isNew: true,
     description:
-      "Department of CSE announces the Uttarakhand Tech-Hackathon 2025 on 4th Nov 2025. Students are encouraged to participate and showcase innovation.",
+      "Department of CSE announces the Uttarakhand Tech-Hackathon 2025 on 30th Oct 2025. Students are encouraged to participate and showcase innovation.",
     fullContent:
-      "All students of BTKIT Dwarahat are informed that on the occasion of Uttarakhand Foundation Day, the Department of Computer Science & Engineering will organize a state-level Hackathon titled 'Uttarakhand Tech-Hackathon 2025' under the theme 'Technical Education Over the Years'. The event will take place on 4th November 2025 at the CSE Smart Class Room. Each team must have 4 members, all from BTKIT (no inter-college teams). Domains include software and hardware problem statements. Top 3 teams will be selected based on innovation, feasibility, technical approach, and societal impact. Interested teams should register via the provided Google Form or Institute Portal link.",
-    link: "/Notice.pdf",
+      "All students of BTKIT Dwarahat are informed that on the occasion of Uttarakhand Foundation Day, the Department of Computer Science & Engineering will organize a state-level Hackathon titled 'Uttarakhand Tech-Hackathon 2025' under the theme 'Technical Education Over the Years'. The event will take place on 30th October 2025 at the CSE Smart Class Room. Each team must have 4 members, all from BTKIT (no inter-college teams). Domains include software and hardware problem statements. Top 3 teams will be selected based on innovation, feasibility, technical approach, and societal impact. Interested teams should register via the provided Google Form or Institute Portal link.",
+    link: "/Letter for HACKATHON SILVER JUBILEE merg.pdf",
     linkText: "View Notice"
-  },
+  },  
   {
     id: 2,
     title: "Hackathon Themes Released",
