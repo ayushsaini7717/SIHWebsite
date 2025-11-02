@@ -5,17 +5,17 @@ import useIntersectionObserver from "../hooks/useIntersectionObserver";
 const TimelineSection = () => {
   const events = [
     {
-      date: "Till 18th October 2025",
+      date: "Till 24th October 2025",
       title: "Registration Phase",
-      detail: "Team registrations open for BTKIT students (4 members per team).",
+      detail: "Team registrations open for BTKIT students (4-6 members (atleast one female)).",
     },
     {
-      date: "4th November 2025",
+      date: "30th Octoer 2025 (Updated)",
       title: "College Level Hackathon",
       detail: "Teams will present their solutions during the internal hackathon held at BTKIT, Dwarahat. Top 3 teams will be selected.",
     },
     {
-      date: "Date to be Announced",
+      date: "2nd-9th November 2025",
       title: "State Level Hackathon",
       detail: "Selected top 3 teams from BTKIT will represent the institute at the State-Level Uttarakhand Tech Hackathon 2025.",
     },

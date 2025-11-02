@@ -27,7 +27,7 @@ const QuickLinks = () => {
       <div className="mt-8 pt-6 border-t border-white/10">
         <h4 className="font-semibold mb-3">Hackathon Stats</h4>
         <div className="flex justify-between text-sm mb-2"><span>Total Notices:</span><span className="text-green-400 font-semibold">{noticesData.length}</span></div>
-        <div className="flex justify-between text-sm"><span>Teams Registered:</span><span className="text-blue-400 font-semibold">TBA</span></div>
+        <div className="flex justify-between text-sm"><span>Teams Registered:</span><span className="text-blue-400 font-semibold">46</span></div>
       </div>
     </div>
   );
