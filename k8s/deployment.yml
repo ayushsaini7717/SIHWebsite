@@ -1,24 +1,40 @@
-apiVersion: apps/v1  
-kind: Deployment     
-
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: sih-app-deployment  
 spec:
   replicas: 1
-
   selector:
     matchLabels:
-      app: sih-app  
-
-  template:  
+      app: sih-app         
+  template:
     metadata:
       labels:
-        app: sih-app  
-    
-    spec: 
+        app: sih-app      
+    spec:
       containers:
-      - name: job-app-server
-        image: ayushsaini07/sihwebsite:latest  
-        
+      - name: app-server
+        image: ayushsaini07/sihwebsite:latest 
         ports:
-        - containerPort: 80  
+        - containerPort: 80                  
+
+       
+        env:
+        - name: DATABASE_URL  
+          valueFrom:
+            configMapKeyRef:
+              name: sih-app-config 
+              key: DATABASE_URL
+
+        - name: NODE_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: sih-app-config
+              key: NODE_ENV
+
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: JWT_SECRET
+     

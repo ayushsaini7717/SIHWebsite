@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sih-app-config
+data:
+  # These are the key-value pairs
+  DATABASE_URL: "postgresql://user:pass@db-service/mydb"
+  NODE_ENV: "production"
